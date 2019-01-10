@@ -4,4 +4,5 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./in-memory-source.datasource"));
+__export(require("./postgresql.datasource"));
 //# sourceMappingURL=index.js.map

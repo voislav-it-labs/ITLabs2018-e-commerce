@@ -4,6 +4,7 @@ import { InMemorySourceDataSource } from '../datasources';
 import { inject, Getter } from '@loopback/core';
 // import { Category } from '../models/category.model';
 // import { CategoryRepository } from './category.repository';
+import { PostgresqlDataSource } from '../datasources/postgresql.datasource';
 
 export class ProductRepository extends DefaultCrudRepository<
   Product,
@@ -16,7 +17,7 @@ export class ProductRepository extends DefaultCrudRepository<
   // >;
 
   constructor(
-    @inject('datasources.InMemorySource') dataSource: InMemorySourceDataSource,
+    @inject('datasources.postgresql') dataSource: PostgresqlDataSource,
     // @repository.getter('CategoryRepository')
     // getCategoryRepository: Getter<CategoryRepository>,
   ) {

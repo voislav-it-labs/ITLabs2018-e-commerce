@@ -12,28 +12,18 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const repository_1 = require("@loopback/repository");
-const models_1 = require("../models");
 const core_1 = require("@loopback/core");
-// import { Category } from '../models/category.model';
-// import { CategoryRepository } from './category.repository';
-const postgresql_datasource_1 = require("../datasources/postgresql.datasource");
-let ProductRepository = class ProductRepository extends repository_1.DefaultCrudRepository {
-    // public readonly categories: HasManyRepositoryFactory<
-    //   Category,
-    //   typeof Product.prototype.id
-    // >;
-    constructor(dataSource) {
-        super(models_1.Product, dataSource);
-        // this.categories = this.createHasManyRepositoryFactoryFor(
-        //   'categories',
-        //   getCategoryRepository
-        // );
+const repository_1 = require("@loopback/repository");
+const config = require("./postgresql.datasource.json");
+let PostgresqlDataSource = class PostgresqlDataSource extends repository_1.juggler.DataSource {
+    constructor(dsConfig = config) {
+        super(dsConfig);
     }
 };
-ProductRepository = __decorate([
-    __param(0, core_1.inject('datasources.postgresql')),
-    __metadata("design:paramtypes", [postgresql_datasource_1.PostgresqlDataSource])
-], ProductRepository);
-exports.ProductRepository = ProductRepository;
-//# sourceMappingURL=product.repository.js.map
+PostgresqlDataSource.dataSourceName = 'postgresql';
+PostgresqlDataSource = __decorate([
+    __param(0, core_1.inject('datasources.config.postgresql', { optional: true })),
+    __metadata("design:paramtypes", [Object])
+], PostgresqlDataSource);
+exports.PostgresqlDataSource = PostgresqlDataSource;
+//# sourceMappingURL=postgresql.datasource.js.map

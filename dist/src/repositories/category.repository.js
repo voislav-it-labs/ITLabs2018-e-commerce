@@ -14,8 +14,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const repository_1 = require("@loopback/repository");
 const models_1 = require("../models");
-const datasources_1 = require("../datasources");
 const core_1 = require("@loopback/core");
+const postgresql_datasource_1 = require("../datasources/postgresql.datasource");
 let CategoryRepository = class CategoryRepository extends repository_1.DefaultCrudRepository {
     // public readonly parentCategory: BelongsToAccessor<
     //   Category,
@@ -28,9 +28,9 @@ let CategoryRepository = class CategoryRepository extends repository_1.DefaultCr
     }
 };
 CategoryRepository = __decorate([
-    __param(0, core_1.inject('datasources.InMemorySource')),
+    __param(0, core_1.inject('datasources.postgresql')),
     __param(1, repository_1.repository.getter('ProductRepository')),
-    __metadata("design:paramtypes", [datasources_1.InMemorySourceDataSource, Function])
+    __metadata("design:paramtypes", [postgresql_datasource_1.PostgresqlDataSource, Function])
 ], CategoryRepository);
 exports.CategoryRepository = CategoryRepository;
 //# sourceMappingURL=category.repository.js.map
