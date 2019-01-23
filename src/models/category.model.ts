@@ -26,6 +26,11 @@ export class Category extends Entity {
   })
   description: string;
 
+  @property({
+    type: 'string',
+  })
+  parentCategoryName: string;
+
   @hasMany(() => Product)
   products: Product[];
 
