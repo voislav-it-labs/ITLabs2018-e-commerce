@@ -21,6 +21,11 @@ export class Product extends Entity {
   imageUrl: string;
 
   @property({
+    type: 'number'
+  })
+  price: number;
+
+  @property({
     type: 'string'
   })
   manufacturer: string;
