@@ -1,0 +1,26 @@
+{
+  "ids": {
+    "Category": 10,
+    "Product": 7
+  },
+  "models": {
+    "Category": {
+      "1": "{\"id\":1,\"name\":\"nadica fff\",\"description\":\"aaaa\",\"parentCategoryName\":\"nadica\"}",
+      "2": "{\"name\":\"Test\",\"description\":\"dddd\",\"parentCategoryName\":\"nadica\",\"id\":2}",
+      "4": "{\"id\":4,\"name\":\"Мокта на навиките\",\"parentCategoryId\":4}",
+      "5": "{\"name\":\"nadi\",\"id\":5}",
+      "6": "{\"name\":\"Test Test\",\"id\":6}",
+      "7": "{\"name\":\"sasas\",\"description\":\"sasa\",\"parentCategoryName\":\"Test\",\"id\":7}",
+      "8": "{\"name\":\"Test Test\",\"description\":\"fdsfsfs\",\"parentCategoryName\":\"nadica\",\"id\":8}",
+      "9": "{\"name\":\"fdsfsd\",\"description\":\"fdsfsd\",\"parentCategoryName\":\"Мокта на навиките\",\"id\":9}"
+    },
+    "Product": {
+      "1": "{\"name\":\"Product1\",\"manufacturer\":\"ndndn\",\"isAvailable\":true,\"shortDescription\":\"Short\",\"fullDescription\":\"Long\",\"categoryId\":5,\"id\":1}",
+      "2": "{\"name\":\"nadica\",\"imageUrl\":\"\",\"manufacturer\":\"hghg\",\"isAvailable\":true,\"shortDescription\":\"hghgf\",\"fullDescription\":\"hgfhfh\",\"categoryId\":2,\"id\":2}",
+      "3": "{\"name\":\"dsadsada\",\"imageUrl\":\"https://firebasestorage.googleapis.com/v0/b/upload-image-8c7bd.appspot.com/o/vo969h5g7pq?alt=media&token=172b4313-c3ca-47f2-8341-e64d778c9b75\",\"manufacturer\":\"sasa\",\"isAvailable\":true,\"shortDescription\":\"sasa\",\"fullDescription\":\"sasas\",\"categoryId\":4,\"id\":3}",
+      "4": "{\"id\":4,\"name\":\"ivana\",\"imageUrl\":\"https://firebasestorage.googleapis.com/v0/b/filegalery.appspot.com/o/deivrcoc8ck?alt=media&token=3290aa1b-02ea-4be8-b504-8a300b27d01d\",\"manufacturer\":\"dsdsad\",\"isAvailable\":true,\"shortDescription\":\"dasdasd\",\"fullDescription\":\"dasdasd\",\"categoryId\":2}",
+      "5": "{\"name\":\"Product sasa\",\"imageUrl\":\"https://firebasestorage.googleapis.com/v0/b/filegalery.appspot.com/o/8yuj3omalk7?alt=media&token=517cb2be-ed47-473a-b094-a7ff8d12ea38\",\"manufacturer\":\"ndndn\",\"isAvailable\":true,\"shortDescription\":\"assasa\",\"fullDescription\":\"dsadasdsad\",\"categoryId\":4,\"id\":5}",
+      "6": "{\"id\":6,\"name\":\"Viktor\",\"imageUrl\":\"https://firebasestorage.googleapis.com/v0/b/shopapp-417ad.appspot.com/o/41vhv9zkpfn?alt=media&token=bcd654de-6ddd-4466-b706-aad29e0d339b\",\"manufacturer\":\"Vik\",\"isAvailable\":true,\"shortDescription\":\"mh kratko opis\",\"fullDescription\":\"na dugo i siroko\",\"categoryId\":6}"
+    }
+  }
+}
